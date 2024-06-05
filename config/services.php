@@ -35,4 +35,15 @@ return [
         ],
     ],
 
+    'steam' => [
+        'client_id' => env('STEAM_CLIENT_ID'),
+        'client_secret' => env('STEAM_CLIENT_SECRET'),
+        'redirect' => env('APP_URL'). '/login/steam/callback',
+    ],
+    'xbox' => [
+        'client_id' => env('XBOX_CLIENT_ID'),
+        'client_secret' => env('XBOX_CLIENT_SECRET'),
+        'redirect' => env('APP_URL'). '/login/xbox/callback',
+    ],
+
 ];
